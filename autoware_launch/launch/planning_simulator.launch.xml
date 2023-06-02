@@ -78,5 +78,6 @@
       <arg name="initial_engage_state" value="$(var initial_engage_state)"/>
       <arg name="vehicle_info_param_file" value="$(find-pkg-share $(var vehicle_model)_description)/config/vehicle_info.param.yaml"/>
     </include>
+    <include file="$(find-pkg-share rss_evaluator)/launch/rss_evaluator.launch.py" if="$(var scenario_simulation)" />
   </group>
 </launch>
